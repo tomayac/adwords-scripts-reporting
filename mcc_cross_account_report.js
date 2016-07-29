@@ -124,7 +124,7 @@ function storeReports(results) {
     if (!timestampIndex) {
       break;
     }
-    if (values[i][timestampIndex] && values[i][timestampIndex]) {
+    if (values[i] && values[i][timestampIndex]) {
       // Ugly date parsing here, as we prevent Spreadsheets date parsing magic
       var date = values[i][timestampIndex].toString();
       var dateMilliseconds = Date.parse(
